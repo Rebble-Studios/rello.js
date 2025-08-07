@@ -1,0 +1,47 @@
+{
+  "name": "rello.js",
+  "version": "1.0.0",
+  "description": "A Discord.js-like library for React applications",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.js"
+    },
+    "./react": {
+      "import": "./src/react/index.ts",
+      "require": "./src/react/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocket",
+    "client",
+    "real-time",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.1",
+    "rello.js": "link:../../../../../AppData/Local/pnpm/global/5/node_modules/rello.js"
+  }
+}
