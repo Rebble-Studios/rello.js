@@ -13,6 +13,7 @@ class WebSocketManager {
         });
         this.websocket.addEventListener("message", (ev) => {
             const { op, d, t } = JSON.parse(ev.data);
+            console.log(op, d, t);
             switch (op) {
                 case 10: // Hello
                     setInterval(() => {
